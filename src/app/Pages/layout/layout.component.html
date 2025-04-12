@@ -1,0 +1,19 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    <h3 style="margin-top: 0;">Menu</h3>
+    <button mat-button routerLink="/dashboard">Dashboard</button><br>
+    <button mat-button routerLink="/login">Users</button><br>
+    <button mat-button routerLink="/settings">Settings</button>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <mat-toolbar color="primary">
+      <span>My App (Giống Google Drive UI)</span>
+    </mat-toolbar>
+
+    <div style="margin-top: 20px;">
+      Main content
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

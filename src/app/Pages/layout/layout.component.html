@@ -1,18 +1,17 @@
-<mat-drawer-container class="example-container">
-  <mat-drawer mode="side" opened>
-    <h3 style="margin-top: 0;">Menu</h3>
-    <button mat-button routerLink="/dashboard">Dashboard</button><br>
-    <button mat-button routerLink="/login">Users</button><br>
-    <button mat-button routerLink="/settings">Settings</button>
+<mat-drawer-container class="container">
+  <mat-drawer class="drawer" mode="side" opened>
+    <h3 class="drawer-title">File Manager</h3>
+    <button mat-flat-button color="primary" class="nav-btn" routerLink="/dashboard">Dashboard</button>
+    <button mat-flat-button color="accent" class="nav-btn" routerLink="/upload">Upload Files</button>
+    <button mat-flat-button color="warn" class="nav-btn" routerLink="/settings">Settings</button>
   </mat-drawer>
 
-  <mat-drawer-content>
-    <mat-toolbar color="primary">
-      <span>My App (Giống Google Drive UI)</span>
+  <mat-drawer-content class="content">
+    <mat-toolbar color="primary" class="toolbar">
+      <span class="toolbar-title">My File Upload App</span>
     </mat-toolbar>
 
-    <div style="margin-top: 20px;">
-      Main content
+    <div class="main-content">
       <router-outlet></router-outlet>
     </div>
   </mat-drawer-content>
